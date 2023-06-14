@@ -24,7 +24,7 @@ export default function Page({ data }) {
 export async function getServerSideProps({ params }) {
     const slug = params.slug;
 
-    const response = await fetch(`https://orgvn.top/${slug}`)
+    const response = await fetch(`https://medsvit.org/${slug}`)
 
     const body = await response.text();
 
